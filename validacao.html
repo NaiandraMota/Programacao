@@ -35,6 +35,8 @@
 
     <br />
 
+    <button
+    onclick="validarAcesso()"
     >
     Verificar validarAcesso
 </button>
@@ -45,6 +47,10 @@
 
 <script>
     function validarAcesso() {
+        const nome =
+        document.getElementById('nome').value.trim();
+
+        const idade =
         parseInt(document.getElementById('idade').value);
 
         const mensagem =
